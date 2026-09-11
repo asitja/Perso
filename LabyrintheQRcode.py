@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 import matplotlib.markers
 import math
 
-'''
-labyrinthe carré simple de taille n généré aléatoirement
-création d'une matrice de 0 et 1 -> 1 = mur
-visualisation de la matrice par tracé
-'''
+# labyrinthe carré simple de taille n généré aléatoirement
+# création d'une matrice de 0 et 1 -> 1 = mur
+# visualisation de la matrice par tracé
+
 
 def zeros(n) :
+    '''matrice n*n de zero'''
     MS = []
     for i in range(n):
         L = [0]*n
@@ -17,6 +17,7 @@ def zeros(n) :
     return MS
 
 def cadre (n):
+    '''change les bords de la matrice en 1'''
     M = zeros(n)
     
     for i in range (n) :
@@ -36,12 +37,22 @@ def printL (L):
         print(L[loop])
 
 def autourLibre(M,x,y):
+    '''
+    vérifie les cases proche,
+    si case autour prise -> False, sinon ->True
+    '''
     if (M[x-1][y] + M[x+1][y] + M[x][y-1] + M[x][y+1]) == 3 or (x == 0 and y == 0) or (x == 0 and y == 1) :
         return False
     else :
         return True
 
 def traceL (M) :
+    '''
+        trace le labyrinth,
+        1 = mur,
+        fait un rendu tracé et un rendu en point,
+        les points sont à l'échelle de l'affichage (formule à modifier)
+        '''
     plt.clf()     # clear figure
     n = len(M)
     Lx = []
@@ -83,6 +94,11 @@ def traceL (M) :
     plt.show()
 
 def Laby (n):
+    '''
+    labyrinthe carré simple de taille n généré aléatoirement,
+    création d'une matrice de 0 et 1 -> 1 = mur,
+    visualisation de la matrice par tracé
+    '''
     M = cadre(n)
     for i in range (n-2):
         for j in range (1,n-1):
@@ -98,6 +114,10 @@ def Laby (n):
                     M[i+1][j] = 0
     traceL (M)
     #return M
+
+
+
+Laby (50)
 
 
 
