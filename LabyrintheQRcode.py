@@ -3,9 +3,11 @@ import matplotlib.pyplot as plt
 import matplotlib.markers
 import math
 
-# labyrinthe carré simple de taille n généré aléatoirement
-# création d'une matrice de 0 et 1 -> 1 = mur
-# visualisation de la matrice par tracé
+'''
+labyrinthe carré simple de taille n généré aléatoirement
+création d'une matrice de 0 et 1 -> 1 = mur
+visualisation de la matrice par tracé
+'''
 
 def zeros(n) :
     MS = []
