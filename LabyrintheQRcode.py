@@ -32,10 +32,6 @@ def cadre (n):
     M[1][0] = 0
     return M
 
-def printL (L):
-    for loop in range (len(L)):
-        print(L[loop])
-
 def autourLibre(M,x,y):
     '''
     vérifie les cases proche,
