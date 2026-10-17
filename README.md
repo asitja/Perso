@@ -4,9 +4,9 @@
    
 Github réunissant quelque projet perso, fait pour s'amuser et passer le temps.   
           
-Projet Labyrinthe : créer un labyrinthe carré de taille n aléatoire     
+Projet Labyrinthe : créer un labyrinthe carré de taille n aléatoire en python     
 
-Projet Morpion : comme son nom l'indique, un morpion     
+Projet Morpion : comme son nom l'indique, un morpion en python     
 
 Projet Blockus : site web en html, javascript et css qui permet de jouer à Blockus (jeu 4 joueurs)     
 
