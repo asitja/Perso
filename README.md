@@ -8,6 +8,8 @@ Projet Labyrinthe : créer un labyrinthe carré de taille n aléatoire
 
 Projet Morpion : comme son nom l'indique, un morpion     
 
+Projet Blockus : site web en html, javascript et css qui permet de jouer à Blockus (jeu 4 joueurs)     
+
 ---    
 
 Le dossier contient des captures d'écran du modèle 3D que je suis entrain de créer.     
